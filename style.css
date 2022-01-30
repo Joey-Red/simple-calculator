@@ -1,0 +1,113 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  font-family: "Zen Kurenaido", sans-serif;
+  background: url(https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#calculator {
+  display: grid;
+  border: solid whitesmoke 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px, auto) repeat(4, 80px);
+  margin: 10% auto;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.575);
+  position: center;
+  max-width: 80%;
+}
+#gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(195, 230, 225, 1) 48%,
+    rgba(247, 185, 186, 1) 52%
+  );
+}
+.screen {
+  display: flex;
+  grid-column: 1/-1;
+  height: 150px;
+  width: 100%;
+  /* background: linear-gradient(
+    90deg,
+    rgba(195, 230, 225, 1) 48%,
+    rgba(247, 185, 186, 1) 52%
+  ); */
+  background: rgb(195, 230, 225);
+  background: linear-gradient(
+    90deg,
+    rgba(195, 230, 225, 1) 0%,
+    rgba(247, 185, 186, 1) 100%
+  );
+  border-bottom: solid whitesmoke 2px;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  font-size: 3rem;
+  justify-content: center;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.781);
+}
+button {
+  border: solid whitesmoke 1px;
+  border-radius: 6px;
+  font-size: 1.8em;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+#mult {
+  background: rgba(247, 185, 186, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(195, 230, 225, 1) 48%,
+    rgba(247, 185, 186, 1) 52%
+  );
+}
+#right-side {
+  background: rgba(247, 185, 186, 1);
+}
+#operator {
+  background: rgba(195, 230, 225, 1);
+}
+
+.inactive {
+  display: flex;
+  border-radius: 6px;
+  border: solid whitesmoke 1px;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  background: rgba(247, 185, 186, 1);
+}
+.inactive i {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 50%;
+}
+
+#blue-side {
+  background: rgba(195, 230, 225, 1);
+}
+#operator2 {
+  background: rgba(247, 185, 186, 1);
+}
+#pink-side {
+  background: rgba(247, 185, 186, 1);
+}
+#equals {
+  color: whitesmoke;
+  background-color: rgb(228, 202, 58);
+}
+#equals:hover {
+  color: #eebc1d;
+  background: rgba(195, 230, 225, 1);
+}
+button:hover,
+.inactive:hover {
+  color: #eebc1d;
+}
